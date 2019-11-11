@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Home</title>
+</head>
+<body>
+
+<!--Navbar-->
+<div th:insert="base :: navbar"></div>
+<br/>
+
+<!--creating container-->
+<div class="container">
+<!--    Row 1-->
+    <div class="row">
+<!--        Jumbotron-->
+        <div class="col-12">
+            <div th:insert="base :: jumbotron"></div>
+        </div>
+    </div>
+
+    <!--    Row 2-->
+    <div class="row">
+
+        <!--Carousels-->
+        <section>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!--Column 1-->
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="../image/car1.jpg" alt="car" class="card-img-top" >
+                                <div class="card-header">
+                                    Car Details
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Category: <span th:text="SUV"></span></h5>
+                                    <p class="card-text"> Id: <span th:text="101"></span></p>
+                                    <p class="card-text"> Make: <span th:text="Nissan"></span></p>
+                                    <p class="card-text"> Model: <span th:text="Quest"></span></p>
+                                    <p class="card-text"> Year: <span th:text="2017"></span></p>
+                                    <p class="card-text"> Color: <span th:text="Orange"></span></p>
+                                    <p class="card-text"> MSRP: <span th:text="25000"></span></p>
+                                </div>
+                                <div class="card-footer text-muted">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <!--Column 2-->
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="../image/car5.jpg" alt="car" class="card-img-top" >
+                                <div class="card-header">
+                                    Car Details
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Category: <span th:text="Van"></span></h5>
+                                    <p class="card-text"> Id: <span th:text="102"></span></p>
+                                    <p class="card-text"> Make: <span th:text="Subaru"></span></p>
+                                    <p class="card-text"> Model: <span th:text="Alto"></span></p>
+                                    <p class="card-text"> Year: <span th:text="2017"></span></p>
+                                    <p class="card-text"> Color: <span th:text="Red"></span></p>
+                                    <p class="card-text"> MSRP: <span th:text="27000"></span></p>
+                                </div>
+                                <div class="card-footer text-muted">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <!--Column 3-->
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="../image/car6.jpg" alt="car" class="card-img-top" >
+                                <div class="card-header">
+                                    Car Details
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Category: <span th:text="Sedan"></span></h5>
+                                    <p class="card-text"> Id: <span th:text="103"></span></p>
+                                    <p class="card-text"> Make: <span th:text="Honda"></span></p>
+                                    <p class="card-text"> Model: <span th:text="Accord"></span></p>
+                                    <p class="card-text"> Year: <span th:text="2019"></span></p>
+                                    <p class="card-text"> Color: <span th:text="White"></span></p>
+                                    <p class="card-text"> MSRP: <span th:text="30000"></span></p>
+                                </div>
+                                <div class="card-footer text-muted">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </section>
+    </div>
+
+<!--    Row 3-->
+    <div class="row">
+
+                <!--Column 1-->
+                <div class="col-4">
+                    <div class="card text-center">
+                        <img src="../image/car4.jpg" alt="car" class="card-img-top" >
+                        <div class="card-header">
+                            Car Details
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Category: <span th:text="SUV"></span></h5>
+                            <p class="card-text"> Id: <span th:text="101"></span></p>
+                            <p class="card-text"> Make: <span th:text="Nissan"></span></p>
+                            <p class="card-text"> Model: <span th:text="Quest"></span></p>
+                            <p class="card-text"> Year: <span th:text="2017"></span></p>
+                            <p class="card-text"> Color: <span th:text="Green"></span></p>
+                            <p class="card-text"> MSRP: <span th:text="25000"></span></p>
+                        </div>
+                        <div class="card-footer text-muted">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            <!--Column 2-->
+            <div class="col-4">
+                <div class="card text-center">
+                    <img src="../image/car2.jpg" alt="car" class="card-img-top" >
+                    <div class="card-header">
+                        Car Details
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Category: <span th:text="Van"></span></h5>
+                        <p class="card-text"> Id: <span th:text="102"></span></p>
+                        <p class="card-text"> Make: <span th:text="Toyota"></span></p>
+                        <p class="card-text"> Model: <span th:text="Camry"></span></p>
+                        <p class="card-text"> Year: <span th:text="2017"></span></p>
+                        <p class="card-text"> Color: <span th:text="Blue"></span></p>
+                        <p class="card-text"> MSRP: <span th:text="27000"></span></p>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Column 3-->
+            <div class="col-4">
+                <div class="card text-center">
+                    <img src="../image/car3.jpg" alt="car" class="card-img-top" >
+                    <div class="card-header">
+                        Car Details
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Category: <span th:text="Sedan"></span></h5>
+                        <p class="card-text"> Id: <span th:text="103"></span></p>
+                        <p class="card-text"> Make: <span th:text="Honda"></span></p>
+                        <p class="card-text"> Model: <span th:text="Accord"></span></p>
+                        <p class="card-text"> Year: <span th:text="2019"></span></p>
+                        <p class="card-text"> Color: <span th:text="Orange"></span></p>
+                        <p class="card-text"> MSRP: <span th:text="30000"></span></p>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+
+<br><br>
+<!--Footer-->
+<div th:insert="base :: footer"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
